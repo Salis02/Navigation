@@ -5,6 +5,7 @@ import 'package:flutter_application_2/screen/screen3.dart';
 import 'package:flutter_application_2/screen/screen4.dart';
 import 'package:flutter_application_2/screen/screen5.dart';
 import 'package:flutter_application_2/screen/screen6.dart';
+import 'package:flutter_application_2/screen/screen7.dart';
 
 void main() => runApp(new MyApp());
 
@@ -33,9 +34,10 @@ class HomePage extends StatefulWidget {
     new DrawerItem("Menu 1 ", Icons.home),
     new DrawerItem("Menu 2", Icons.article),
     new DrawerItem("Menu 3", Icons.dashboard),
-    new DrawerItem("Menu 4", Icons.dashboard),
-    new DrawerItem("Menu 5", Icons.dashboard),
+    new DrawerItem("Menu 4", Icons.home),
+    new DrawerItem("Menu 5", Icons.article),
     new DrawerItem("Menu 6", Icons.dashboard),
+    new DrawerItem("Menu 7", Icons.home),
   ];
 
   @override
@@ -61,8 +63,10 @@ class HomePageState extends State<HomePage> {
         return new Screen4();
       case 4:
         return new Screen5();
-      case 4:
+      case 5:
         return new Screen6();
+      case 6:
+        return new Screen7();
 
       default:
         return new Text("Error");
